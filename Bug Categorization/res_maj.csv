@@ -1,0 +1,343 @@
+,Summary,Majorblocks,Assignee,Date,Time
+0,[TGV] performance issue for mask producing comparison instructions,Execution Unit ,Nicolas Brunie,2022-10-18,15:44:00
+5,[TGV]:: COSIM VS RTL VL/VTYPE MISMATCH incase of B2B vsetvli & vsetivli ,Execution Unit ,Josh Smith,2022-10-18,05:59:00
+8,Dhrystone Performance in HB ,Instruction Decode and Dispatch ,Josh Smith,2022-10-17,15:29:00
+12,[TGV] Milestone 13 L2 tests failing,Instruction Decode and Dispatch ,Josh Smith,2022-10-14,11:56:00
+13,[TGV]: SdIssQ Entry must have issued to be valid in this pipe,Instruction Decode and Dispatch ,Yohann Rabefarihy,2022-10-14,10:09:00
+18,[TGV] Fix LSIssQ to handle multiple STBPipe broadcasts,Execution Unit ,Yohann Rabefarihy,2022-10-13,06:30:00
+19,"[TGV] Fix LsIssQ assert ""vagu require store data uopID not issued twice""",Instruction Decode and Dispatch ,Yohann Rabefarihy,2022-10-13,05:00:00
+21,[LSU FV]: PTW with DTLB MMIO is sending RH source above (nMSHRs*nCacheClients) causing RTL assertion fail,Execution Unit ,John Ingalls,2022-10-12,22:55:00
+22,[LSU FV]: Probe request unable to read L1DC due to unrolling LST reads and MSHR Tag Writes,Execution Unit ,John Ingalls,2022-10-12,22:11:00
+27,[LSU FV]: PTW with DTLB MMIO Response is violating the RH minimum size request assert,Instruction Decode and Dispatch ,John Ingalls,2022-10-12,07:58:00
+29,[TGV] LsIssQEntry_assert : vagu require store data uopID not issued twice,Execution Unit ,Yohann Rabefarihy,2022-10-11,22:12:00
+31,[TGV] 32-bit unmasked strided load hanging,Instruction Decode and Dispatch ,Brad Wu,2022-10-11,16:08:00
+34,Assertion Failure: unrolled load tail should follow first through LDWB loop-back in-order until MAL-1871,Instruction Decode and Dispatch ,John Ingalls,2022-10-11,06:44:00
+36,[LSU FV]: Probe request unable to read L1DC even after asserting tsArb_lsIssBlock is causing the Probe to remain stalled,Execution Unit ,John Ingalls,2022-10-11,03:32:00
+43,[TGV] Assertion failure:  vlByteLut cannot serve halfVl and vertVl at once,Interrupt,Kira Tsao,2022-10-10,07:20:00
+45,[TGV] Assertion failed: a tag should only be broadcast if the uop read a mask,Execution Unit ,Nicolas Brunie,2022-10-08,19:11:00
+46,[TGV] LDpipe assertions firing on MS7 L2 tests,Instruction Decode and Dispatch ,Yohann Rabefarihy,2022-10-07,14:42:00
+48,Assertion Failed: SFENCE/HFENCE should issue with both operands,Execution Unit ,John Ingalls,2022-10-07,08:53:00
+49,"[TGV]:: Assertion:: Design dispatched four vmsleu.vx in the same cycle, It leads to following assertion Unexpected multiple multi-uop accumulator sequences in a single cycle",Instruction Decode and Dispatch ,Andrew Hanselman,2022-10-07,03:08:00
+50,"[TGV] Milestone14 Assert failed: LsIssQEntry should be waiting for wakeup, not ready to issue or issued",Execution Unit ,John Ingalls,2022-10-07,02:03:00
+51,[TGV]:: COSIM VS RTL VL/VTYPE MISMATCH incase of B2B vsetvli & vsetivli ,Instruction Decode and Dispatch ,Naveen Rathore,2022-10-07,02:00:00
+57,[TGV] LsIssQ assert: STB set data ready twice on the same uop,Instruction Decode and Dispatch ,Yohann Rabefarihy,2022-10-06,13:48:00
+58,[TGV] Assertion failed: SDFP0 request should match an entry,Instruction Decode and Dispatch ,Yohann Rabefarihy,2022-10-06,13:06:00
+64,"[TGV]:: Assertion:: PipeValidReplay_valid asserted for a entry, which is already issued(Entry-1)",Instruction Decode and Dispatch ,Yohann Rabefarihy,2022-10-06,08:15:00
+67,[TGV] vfncvt.f.f.w uop exception flag equivalence falsification,Instruction Decode and Dispatch ,Kira Tsao,2022-10-05,20:49:00
+71,LSU LTB entry received more data from LDQ than pendWrCnt,Instruction Decode and Dispatch ,Brad Wu,2022-10-05,13:54:00
+79,[TGV] Assertion failed: LTB entry received more data from LDQ than pendWrCnt,Execution Unit ,Brad Wu,2022-10-04,12:11:00
+82,[LSU FV]: 1st part of unrolling instruction not taking Fast Load Forward Path with 2nd part being replayed and taking it is causing 2nd part to reach LDWB stage ahead of 1st part,Load Store Unit,John Ingalls,2022-10-03,21:50:00
+83,[TGV] LTB PRA de-asserts srcTag_2_ready for the last uop of segment load causing hang,Execution Unit ,Brad Wu,2022-10-03,16:44:00
+85,[TGV] Assertion Failure: a vector uop should not be categorized as FP Add(x)/Mul(x)/Div(x)/FMA(x)/f2i(x),Instruction Decode and Dispatch ,Nicolas Brunie,2022-10-03,06:52:00
+86,Assertion Failure : LE base address upper changed,Load Store Unit,Binayak Tiwari,2022-10-03,06:07:00
+87,[LSU][UT] Load data mismatched for cacheline crossing fp load,Instruction Decode and Dispatch ,John Ingalls,2022-10-02,22:21:00
+88,[LSU][UT] SD Pipe must issue data before StoreQ entry retire assertion failed for misaligned,Load Store Unit,John Ingalls,2022-10-02,22:02:00
+89,[LSU][UT] LdQEntry last unrolled uop should wait for older LdQEntries to resolve assertion failed,Instruction Decode and Dispatch ,John Ingalls,2022-10-02,21:25:00
+90,[LSU][UT] LSTO Store Data Issued did not match SDO,Instruction Decode and Dispatch ,John Ingalls,2022-10-02,20:10:00
+91,[LSU][UT] Unrolled misaligned load idx not incremented  ,Execution Unit ,John Ingalls,2022-10-02,10:51:00
+99,[TGV] Baler - ROB Instruction should not retire before IssQ Entry` when vl=0,Execution Unit ,Yohann Rabefarihy,2022-09-30,04:35:00
+102,"[TGV][BAL] Assertion from STBPipe.scala, PopCount(io.stbFreeNdxDcd) === 1.U",Instruction Decode and Dispatch ,Josh Smith,2022-09-29,16:36:00
+104,[TGV] StallDetector in VectorPermuteEngine generates an assertion (might be false alarm),Execution Unit ,Nicolas Brunie,2022-09-29,15:56:00
+106,"[TGV] LsIssQEntry assertion:  LsIssQEntry should be waiting for wakeup, not ready to issue or issued",Execution Unit ,Yohann Rabefarihy,2022-09-29,12:34:00
+107,[TGV]: Vex PRF write should only be enabled for a valid result,Load Store Unit,Nicolas Brunie,2022-09-29,10:48:00
+110,LSU: misaligned Floating Point load wrong recoding lgSize,Instruction Decode and Dispatch ,John Ingalls,2022-09-29,05:44:00
+111,LSU: LSTO Store Data Issued did not match SDO,Execution Unit ,John Ingalls,2022-09-29,04:54:00
+112,LSU: Store cross cache misaligned with 2nd part replayed is retiring 1st part,Instruction Decode and Dispatch ,John Ingalls,2022-09-29,04:25:00
+113,[TGV] LSU selects wrong returned claim vector when pipe0 idle,Execution Unit ,David Kravitz,2022-09-29,03:46:00
+116,[TGV] COSIM VS RTL data MISMATCH for vcompress.vm related to tail agnostic on register boundary,Instruction Decode and Dispatch ,Nicolas Brunie,2022-09-29,01:24:00
+124,[LSU FV]: Store cross cache misaligned with 2nd part replayed is getting flush after 1st part retires,,John Ingalls,2022-09-27,20:41:00
+125,[TGV] Assertion Failure: ROB Retire Hang around entry  72   ,,Nicolas Brunie,2022-09-27,08:07:00
+129,[TGV] complex vrgather deadlock when tail+mask agnostic enforced,,Nicolas Brunie,2022-09-27,06:02:00
+131,[TGV] Correlation: Look into vfmerge latency,,Nicolas Brunie,2022-09-27,03:05:00
+144,"[TGV]:: vsetvli instruction not retaining previous value and Programmed VL to 0,  in case of rs1=x0 ",,Nicolas Brunie,2022-09-26,06:50:00
+147,[TGV]  vector divider credit underflow,,Nicolas Brunie,2022-09-24,17:49:00
+148,Design considering the wrong cause code for Machine Timer Interrupt,,Satish Bhavanari,2022-09-24,00:06:00
+149,[TGV] Assertion in LST pipe of LSU On L2 testing of Milestone 4,,John Ingalls,2022-09-23,14:33:00
+154,"[TGV] LSU requesting to to claim an LTB in Baler, but not establish response being sent, but LSU tries to send the data",,Yohann Rabefarihy,2022-09-23,10:05:00
+157,[TGV] vmv1r.v WRData Mismatch,,Nicolas Brunie,2022-09-22,12:22:00
+158,[TGV] Assert: LSTO Store Data Issued must match SDFP,,Srivatsa Yogendra,2022-09-22,11:18:00
+159,Assertion Failure: SiFive_IFUIQ_assert,,Jeffrey Huang,2022-09-22,06:49:00
+160,"[TGV] Assertion Failure : VexPipe : credit overflow credit=1, debit=0, full=1",,Nicolas Brunie,2022-09-22,06:28:00
+166,[TGV] vsetResolveStall_ID Hang,,David Kravitz,2022-09-21,16:33:00
+168,[TGV] LSU sends wrong load data to LTB (different than MAL-2646),,Srivatsa Yogendra,2022-09-21,13:18:00
+169,[TGV] Recently added assertion in MallardTileView.scala fires on sting tests,,Andrew Hanselman,2022-09-21,13:14:00
+172,LSU: LDWB unroll mux multiple select,,John Ingalls,2022-09-21,02:29:00
+174,[TGV] Baler - `ROB Instruction should not retire before IssQ Entry` when vl=0,,Srivatsa Yogendra,2022-09-20,20:55:00
+177,[TGV] LDPipe 0 sent data that matched no LTB entries,,Srivatsa Yogendra,2022-09-20,17:33:00
+178,[TGV] LSU: lsta_srcReg unstable during unroll,,John Ingalls,2022-09-20,16:39:00
+180,"[TGV] vrgather.vv instruction, replacing masked elements with all 1's for an unmasked instruction. ",,Nicolas Brunie,2022-09-20,12:18:00
+182,[TGV]Assertion Failure : make sure we don't match tag on a source that's marked ready,,Ishita Shah,2022-09-20,09:08:00
+184,[TGV] Assertion Failure :Physical register   0 set as ready twice ,,Nicolas Brunie,2022-09-20,07:50:00
+185,[TGV]:: Assertion:: fphrzredmod should always be valid 2-cycle after preOutValid,,Kira Tsao,2022-09-20,02:39:00
+186,Assertion Failure: LSTR address beat row same even odd calculation,,John Ingalls,2022-09-20,00:08:00
+189,Assertion Failure: HWPF BPM retrain counter,,Binayak Tiwari,2022-09-19,19:51:00
+190,[TGV] Fix bugs found in vlseg4e# tests,,Brad Wu,2022-09-19,18:07:00
+192,[TGV] vmv.v.v stalled in issue queue,,Nicolas Brunie,2022-09-19,12:09:00
+193,[TGV] LSU sends wrong load data to LTB,,David Kravitz,2022-09-19,11:55:00
+194,Assertion Failure: SiFive_FexPipe_assert: FEX pipe saw source replay from RR stage,,John Ingalls,2022-09-19,11:42:00
+196,[TGV]:: COSIM VS RTL WRDST MISMATCH for instruction vfredosum.vs(PC=0x0000000022c557cc),,Nicolas Brunie,2022-09-19,07:26:00
+198,MSHR Entry Valid Non-Reusable Hang failure in p550_fake_l3,,John Ingalls,2022-09-19,03:04:00
+199,[TGV] Assertion:: Vex PRF write should only be enabled for a valid result ,,Nicolas Brunie,2022-09-19,02:52:00
+200,[TGV] Set accumulator unused PRA bits before first uop dispatches to Issue Queue,,Andrew Hanselman,2022-09-19,01:58:00
+202,Assertion Failure: SiFive_HwpfBitPattern_assert,,Binayak Tiwari,2022-09-18,23:29:00
+205,[TGV] LSU doesn't send enough data to LTB,,Yohann Rabefarihy,2022-09-18,07:44:00
+206,[TGV] LSU sends wrong load data to LTB,,Srivatsa Yogendra,2022-09-17,20:54:00
+207,[TGV] Vex PRF write should only be enabled for a valid result,,Nicolas Brunie,2022-09-17,18:27:00
+208,[TGV] p670 elaboration broken because (exception in segmented RTL for multiple nLDPipes),,Brad Wu,2022-09-16,16:45:00
+210,[TGV] hang waiting for LSU replay during LTB establish,,John Ingalls,2022-09-16,15:42:00
+212,[TGV] LTB does not use bypass for old dest data when it should,,Alexandre Solomatnikov,2022-09-16,12:16:00
+219,[TGV][LSU-Baler] Vector Store op does not retire,,David Kravitz,2022-09-15,17:48:00
+220,[TGV][LSU-Baler] SDFPX request should match an entry,,David Kravitz,2022-09-15,17:12:00
+221,[TGV][LSU-Baler] SD Pipe must not issue data multiple times to the same StQEntry,,John Ingalls,2022-09-15,16:51:00
+224,[TGV] LSU SD Pipe must not issue data multiple times to the same StQEntry  @[StoreQ.scala 1269:18],,John Ingalls,2022-09-15,15:37:00
+239,[TGV]:: COSIM VS RTL WRDST MISMATCH for instruction vseq.vx(PC=0x00000000800037d0),,David Kravitz,2022-09-14,06:16:00
+240,[TGV]:: Assertion::  make sure we don't match tag on a source that's marked ready,,Andrew Hanselman,2022-09-14,02:33:00
+241,[TGV]:: COSIM VS RTL WRDST MISMATCH for vrgatherei16.vv,,Nicolas Brunie,2022-09-13,22:40:00
+248,[TGV] Assertion Failed: ROB cmplCnt underflow on entry 20,,Ishita Shah,2022-09-13,07:59:00
+250,[TGV] Correlation: Reduction failure,,Kira Tsao,2022-09-12,23:02:00
+259,"[TGV] assert ""LTB entry already in use"" in milestone 7 test",,Yohann Rabefarihy,2022-09-12,12:14:00
+263,[TGV]:: COSIM VS RTL WRDST MISMATCH for vmsleu.vi(PC=0x8000284c),,Andrew Hanselman,2022-09-11,23:41:00
+264,[TGV] TGV mask agnostic & tail elements,,Nicolas Brunie,2022-09-09,23:18:00
+265,[TGV] Assertion Failure: A delayed flush cannot be valid simultaneously with a complex sequence start,,Nicolas Brunie,2022-09-09,06:29:00
+267,[TGV]:: COSIM VS RTL WRDATA MISMATCH for vfredosum.vs (PC=0x0000000040440256 ),,Kira Tsao,2022-09-09,05:16:00
+268,[TGV] COSIM VS RTL WRDST SIZE MISMATCH for VMV4R.V,,Naveen Rathore,2022-09-09,02:18:00
+274,[TGV] stall_REN asserts due to RDU dispatch-to-TGV blockage during high-LMUL load loop,,John Ingalls,2022-09-07,16:51:00
+275,[TGV] coreip_livermore_vector has compile errors,,David Kravitz,2022-09-07,15:28:00
+276,[TGV] LTB assertion fires after claim when no entries are available,,David Kravitz,2022-09-07,12:18:00
+278,[TGV] Assertion failed: Physical register 95 set as ready twice (only first conflicting id shown),,Andrew Hanselman,2022-09-07,06:35:00
+279,[TGV]:: Assertion:: Vector permute engine should only be flushed during complex permutations,,Naveen Rathore,2022-09-07,01:35:00
+280,"[TGV]:: Assertion::  vnmsub.vv instruction not completed, It leads to LdQEntry FSM Hang",,Andrew Hanselman,2022-09-07,01:15:00
+281,[TGV]::  COSIM VS RTL WRDATA MISMATCH for vfredosum.vs (PC=0x42100c46),,Kira Tsao,2022-09-06,21:51:00
+282,[LSU ISSQ FV]: 1st part of unrolled instruction getting replayed 1 cycle after 2nd part replays is causing both replayed parts to be re-issued in LST Pipe separately,,John Ingalls,2022-09-06,20:41:00
+283,[TGV] LSU: multiple uop Load must wait to Resolve until all pieces hazards clear,,John Ingalls,2022-09-06,14:18:00
+285,[TGV] Correlation: unit-stride bandwidth read test failures,,Yohann Rabefarihy,2022-09-06,09:32:00
+286,[TGV] Assertion Failed: ROB cmplCnt underflow on entry ,,David Kravitz,2022-09-06,09:00:00
+287,[TGV] REN stall,,Andrew Hanselman,2022-09-06,05:59:00
+288,[TGV]:: Assertion:: assert(PopCount(prfWrSel(i).asUInt) <= 1.U),,Andrew Hanselman,2022-09-06,03:26:00
+289,[TGV]:: Assertion:: make sure we don't match tag on a source that's marked ready,,Andrew Hanselman,2022-09-06,02:35:00
+290,[TGV]:: Assertion : VectorIotaUnit got un-ordered csid= 2 and previous csid= 0,,Brad Wu,2022-09-06,01:42:00
+291,Healdsburg IssQ assertion: make sure we don't match tag on a source that's marked ready,,Julian Bailey,2022-09-05,14:39:00
+292,Assertion Failure: LDArb timing-relaxed way enables should include selected way in MAL-2191,,John Ingalls,2022-09-05,06:18:00
+293,[TGV]:: COSIM VS RTL MCAUSE MISMATCH for vmv1r.v (PC=0x80009d3a),,Naveen Rathore,2022-09-05,05:56:00
+294,Assertion Failure: SiFive_RDU_assert : More than one JALR detected in ID stage  ,,Adam George,2022-09-05,05:37:00
+295,Assertion::: LDArb timing-relaxed way enables should include selected way in MAL-2191,,John Ingalls,2022-09-05,00:54:00
+297,[TGV] Div output not killed properly,,Nicolas Brunie,2022-09-04,21:03:00
+300,WG + HYP : data traffic in HS mode not denied from sideband,,Abderrahmane Sensaoui,2022-09-02,10:25:00
+302,[TGV] Assertion Failure: Vex PRF write should only be enabled for a valid result,,Kira Tsao,2022-09-02,05:41:00
+303,Assertion failed: RAS forward target was incorrect,,Cyril Bresch,2022-09-02,02:13:00
+304,[TGV] Assertion failure : Banked freelist exhaustion. Check your nPRs parameter.,,David Kravitz,2022-09-02,01:46:00
+305,[TGV] vfdiv.vv instruction gets killed but shouldn't,,Naveen Rathore,2022-09-01,23:41:00
+306,[TGV] LTB claim response lets LSU establish same entry for 2 different loads,,David Kravitz,2022-09-01,20:19:00
+307,"[TGV] Fix ""LTB Entry received more data from LDQ than pendWrCnt"" assertion by qualifying clear with entry valid",,David Kravitz,2022-09-01,15:19:00
+308,[TGV] Divider sends completion to ROB after BR Flush that should have killed it,,David Kravitz,2022-09-01,12:41:00
+309,[TGV] Arbitray-vl store data byte enable not working,,Yohann Rabefarihy,2022-09-01,09:48:00
+310,[TGV]::  COSIM VS RTL WRDATA MISMATCH for vfslide1down(PC=0x201060f8),,Nicolas Brunie,2022-09-01,03:22:00
+311,WG+HYP : wrong mepc value when executing illegal csr write on slwid,,Abderrahmane Sensaoui,2022-09-01,02:14:00
+312,[TGV] Load with VL=0 should not establish LoadQ or return data,,Yohann Rabefarihy,2022-08-31,13:07:00
+314,[TGV] Baler dispatch needs to use mask freelist response for `v0` destinations,,David Kravitz,2022-08-30,13:08:00
+316,[TGV}:: Mismatch between Design & Cosim for vrgatheri16.vv ,,Nicolas Brunie,2022-08-30,06:31:00
+318,[TGV] assert failed (verification library): LdQEntry must be valid to be used ,,John Ingalls,2022-08-30,02:37:00
+319,[TGV] Assertion Failure: PopCount(prfWrSel(i).asUInt) <= 1.U,,David Kravitz,2022-08-30,00:28:00
+320,[TGV]:: COSIM VS RTL WRDST for vdivu.vv (PC=0x8000a0a8),,Naveen Rathore,2022-08-29,23:35:00
+323,[TGV]:: COSIM VS RTL WRDATA for vcompress.vm (PC=0x800053fa),,Nicolas Brunie,2022-08-29,22:26:00
+324,[TGV] vector store stores incorrect value after uop ID is added to LSU wakeup,,Yohann Rabefarihy,2022-08-29,21:13:00
+327,LSU: unrolled misaligned load only serialize with other misaligned loads through LDWB loop-back buffer,,John Ingalls,2022-08-29,10:06:00
+328,"[TGV] Assertion Failed: Freelist entry is being returned, but already marked free",,Ishita Shah,2022-08-29,10:03:00
+329,U8_maxed_out WG: ccache_side/no_int test fails on wrong error register address for the wgchecker attached to ccache_side.,,Abderrahmane Sensaoui,2022-08-29,08:25:00
+330,Assertion Failure: SiFive_LDPipe_assert,,John Ingalls,2022-08-29,05:57:00
+332,[TGV]:: COSIM VS RTL WRDST MISMATCH for vfredmax.vs(PC=0x2020e3a78),,Naveen Rathore,2022-08-29,00:48:00
+333,Unexpected RAS misprediction (two JALRs are sent to decode),,Adam George,2022-08-28,23:16:00
+334,[TGV] Physical register set as ready twice,,Nicolas Brunie,2022-08-28,20:03:00
+337,u8_maxed_out WG test fails with IFU assertion,,Anthony Hung,2022-08-27,15:52:00
+338,[TGV] VectorAGU should unroll uops for LMUL=8,,Yohann Rabefarihy,2022-08-26,16:45:00
+340,Load Page Fault in front_port_evicts.conf,,Deepika S K,2022-08-26,10:55:00
+342,[TGV] FP half-precision cosim mismatches on wrdata and PC,,Shaka Kao,2022-08-25,16:00:00
+344,[COSIM-ERROR][#] COSIM VS RTL PC MISMATCH,,Saurabh Singh (PVIPs),2022-08-25,07:45:00
+348,[TGV]: VectorAccumulator Set to ready and clear.,,Andrew Hanselman,2022-08-24,13:59:00
+351,Assertion Failure : ROB Retire Hang,,John Ingalls,2022-08-24,03:36:00
+357,[TGV] Assertion failed: make sure we don't match tag on a source that's marked ready,,Andrew Hanselman,2022-08-23,08:36:00
+358,[TGV] Assertion failed: Physical register 28 set as ready twice (only first conflicting id shown),,Andrew Hanselman,2022-08-23,08:25:00
+359,[TGV] Vex PRF write should only be enabled for a valid result,,Kira Tsao,2022-08-23,06:03:00
+360,[TGV]:: COSIM vs RTL PC mismatch,,Kira Tsao,2022-08-23,02:51:00
+362,[TGV] Mask FreeList stall / ROB hang due to vector mask PRF Freelist exhaustion,,Nicolas Brunie,2022-08-23,00:15:00
+363,[TGV] Assertion ROB: ROB cmplCnt underflow on entry,,Andrew Hanselman,2022-08-22,23:22:00
+365,X-prop from L1dcTag/WayPred SRAM circuit model,,John Ingalls,2022-08-22,10:18:00
+366,[TGV]:: Assertion:: S2V Clock should be enabled (X-Prop on io_s2vClockEn),,Naveen Rathore,2022-08-22,08:02:00
+367,[TGV] Banked freelist exhaustion. Check your nPRs parameter,,Ishita Shah,2022-08-22,07:25:00
+368,[TGV]:: Cosim vs RTL write data mismatch for PC=0x2046666c    (Vaadd.vx),,Kira Tsao,2022-08-22,06:50:00
+369,[TGV]  MSHR Entry Valid Non-Reusable Hang,,Andrew Hanselman,2022-08-22,05:34:00
+370,LSU: spurious write match on predicted but not priority-selected way,,John Ingalls,2022-08-22,04:30:00
+371,[TGV]: Missing completion (killed by wrong tag kill) from vnmsac.vx instruction in pipe0,,Nicolas Brunie,2022-08-22,01:51:00
+389,HWPF LGS: engine index mismatch on lstc feedback,,Binayak Tiwari,2022-08-19,15:50:00
+397,"[TGV][RVV 16.6] vmv<nr>r does not move ""whole"" register",,Kira Tsao,2022-08-19,00:38:00
+398,Assertion Failure : HWPF Hang,,Binayak Tiwari,2022-08-18,22:49:00
+399,[TGV] LSU LSTR unrolled UopNum should have a UopOffset  @[LSTPipe.scala 5707:18],,John Ingalls,2022-08-18,19:20:00
+400,[TGV] LSU issue queue issues vector instruction with vlValid==0,,Josh Smith,2022-08-18,18:07:00
+404,[TGV] LTB PRA lookup request not matching expected uopIDs,,David Kravitz,2022-08-18,09:50:00
+405,p650 build fails on enabling floatingPointHalfPrecisionPresent,,Nicolas Brunie,2022-08-18,08:15:00
+406,[TGV] LSU: non-DLEN-aligned accesses to MMIO,,John Ingalls,2022-08-18,07:48:00
+409,Assertion Failure: L2 TLB multi-hit,,Saurabh Singh (PVIPs),2022-08-17,23:22:00
+410,[TGV] FreeList stall / ROB hang due to a vector PRF Freelist bank exhaustion ,,Nicolas Brunie,2022-08-17,22:48:00
+428,[TGV] Baler Assertion failed: LTBPipe tag match on multiple entries,,David Kravitz,2022-08-17,13:29:00
+430,[TGV]:: COSIM vs RTL PC mismatch (Branch not taken in Design PC=0x80002c54),,Andrew Hanselman,2022-08-17,09:24:00
+434,prefetch_cmo_directed test failed on configs p550 and p650,,John Ingalls,2022-08-17,03:33:00
+435,[TGV]:: Assertion: Banked freelist exhaustion (BankExausted_0),,David Kravitz,2022-08-17,02:54:00
+442,[TGV]:: Cosim vs RTL write data mismatch for vslideup instruction with VL=0,,Nicolas Brunie,2022-08-16,09:53:00
+443,[TGV]::  COSIM VS RTL MCAUSE MISMATCH,,Naveen Rathore,2022-08-16,08:37:00
+448,Assertion Fail : ROB Retire Hang,,Deepika S K,2022-08-16,05:03:00
+451,[TGV] Assert error for FP reduction min/max,,Josh Smith,2022-08-16,00:51:00
+453,[TGV] vmfne doesn't set fflags,,Kira Tsao,2022-08-15,12:14:00
+456,[TGV] Assertion failed: LTB Entry should be cleared after a flush at LoadBuffer.scala:143,,John Ingalls,2022-08-12,11:11:00
+457,"[TGV] Hit ""Accumulator ready set twice"" assert for floating-point compare instructions",,Andrew Hanselman,2022-08-12,07:19:00
+459,[TGV]:: Cosim vs RTL write data mismatch for PC=0x80007e96    (Vadd.vx),,Naveen Rathore,2022-08-12,06:04:00
+460,[TGV] XPROP failing with VRDU assert,,Nicolas Brunie,2022-08-12,05:11:00
+461,[LSU-UT] LSU returning wrong misaligned data from L2->LoadQ fast path,,John Ingalls,2022-08-11,12:16:00
+462,[TGV] Assertion blocking the useage of vsetvli in sting tests,,Yohann Rabefarihy,2022-08-11,10:27:00
+463,[TGV] vmflt.vf FP exception flag mismatch,,Andrew Hanselman,2022-08-11,08:59:00
+465,[TGV] accumulator set ready twice in vmsleu.vi test,,Nicolas Brunie,2022-08-11,06:24:00
+466,[TGV]:: Assertion: LTB data LDWB should come 2 cycles after LDR tag Match,,David Kravitz,2022-08-11,04:39:00
+467,[TGV] Rename from vfredsum/vfwredsum to vfredusum/vfwredusum,,Lance Huang,2022-08-11,01:56:00
+469,[TGV]:: STB Assertion:: when(dataValid) { assert(entryValid) } ,,David Kravitz,2022-08-10,10:16:00
+472,[TGV]:: Vector RHF can rewind incorrectly if flush happens during last cycle of rewind,,Naveen Rathore,2022-08-10,06:30:00
+473,[TGV] Set csid for simple reduction instructions that are queued in sequencer entries,,Brad Wu,2022-08-10,03:31:00
+475,[TGV] Incorrect store data going into STB,,David Kravitz,2022-08-09,14:08:00
+478,"[TGV]: vmacc.vx not executed correctly, It leads to COSIM vs RTL data mismatch",,Kira Tsao,2022-08-09,09:59:00
+479,[TGV]: Tail elements data mismatch for vmulhu.vv with TA=0,,Kira Tsao,2022-08-09,08:04:00
+481,[TGV] Assertion MSHR failure : MSHR Entry Valid Non-Reusable Hang,,David Kravitz,2022-08-09,05:54:00
+482,[TGV]:: Cosim vs RTL write data mismatch for vzext.vf2 ,,Kira Tsao,2022-08-09,03:20:00
+483,[TGV]:: Extra registers write-back in RTL compare to COSIM(PC=0x8000a026) for vand.vv,,Nicolas Brunie,2022-08-09,02:45:00
+484,[TGV] Data mismatch on vcompress.vm inst,,Nicolas Brunie,2022-08-08,11:18:00
+485,COSIM VS RTL PC MISMATCH ,,Josh Smith,2022-08-08,07:51:00
+486,[TGV] Assertion StoreBuffer: SDFP0 request match entry should have data valid,,John Ingalls,2022-08-08,07:39:00
+487,[TGV] Assertion VEX: At most one tag should be broadcasted during any cycle,,Nicolas Brunie,2022-08-08,06:02:00
+488,Assertion Failure: SiFive_NLP_assert,,Saurabh Singh (PVIPs),2022-08-08,05:48:00
+489,[TGV] Assertion ROB: ROB Retire Hang around entry,,Nicolas Brunie,2022-08-08,04:46:00
+490,Assert failed with stall_REN Hang,,Josh Smith,2022-08-08,03:00:00
+491,[COSIM-ERROR][#] COSIM VS RTL PC MISMATCH,,Saurabh Singh (PVIPs),2022-08-08,00:51:00
+492,[TGV] Floating point order reduction hanged due to tag injection failed,,Kira Tsao,2022-08-07,22:59:00
+495,[TGV] Assertion failed: LTB doesn't reserved the right number of entries,,Yohann Rabefarihy,2022-08-05,15:21:00
+496,[TGV] Store & Load data mismatch later in MAL-2334 because bypass is missing baler,,Alexandre Solomatnikov,2022-08-05,14:47:00
+497,[TGV]: tail elements not updated correctly for vrgatheri16 with TA=0 (Undisturbed),,Nicolas Brunie,2022-08-05,12:04:00
+500,[TGV]:: Vector load store forwarding:: Vector Load is getting wrong data(PC=0x887036a4),,David Kravitz,2022-08-05,03:29:00
+504,[TGV] Baler sending bogus tag broadcasts to VEX,,David Kravitz,2022-08-04,12:10:00
+505,[TGV] vcompress.vm inst not updating all the elements (due to dual tag bcasts conflict),,Nicolas Brunie,2022-08-04,11:19:00
+506,LSU: unroll causes LSTA wrong address forward from WB stage,,John Ingalls,2022-08-04,11:09:00
+508,[TGV] LTB returning complete to ROB before Load returns data,,David Kravitz,2022-08-03,21:16:00
+513,[TGV] LTB PRA is returning ready too soon,,David Kravitz,2022-08-03,08:26:00
+517,[TGV]: Cosim vs RTL mismtach for vslidedown.vx instruction,,Nicolas Brunie,2022-08-03,04:07:00
+519,[TGV] LSU: RR unrolled Uop for single DLEN,,Yohann Rabefarihy,2022-08-02,17:32:00
+520,[TGV] LsIssQ Entry must have issued to be valid in this pipe @[LsIssQ.scala 589:14],,John Ingalls,2022-08-02,15:36:00
+521,"[TGV] vslideup.vi v15, v0, 1 seems to be never woken up on p670",,Nicolas Brunie,2022-08-02,14:42:00
+522,[TGV] vcompress.vm mismatch,,Nicolas Brunie,2022-08-02,13:56:00
+524,[TGV] vl corruption in VectorSequencer entries during FIFO shift down,,Nicolas Brunie,2022-08-02,09:38:00
+525,[TGV] vector div injecting tag after kill leading to ROB assertion: ROB cmplCnt underflow on entry,,Nicolas Brunie,2022-08-02,09:03:00
+529,[TGV] Accumulator produces wrong results for vector compare instructions (for LMUL >=4),,Andrew Hanselman,2022-08-02,02:40:00
+530,LSU: Issue stage pre-calculated age between replayed unrolled pieces,,John Ingalls,2022-08-02,00:37:00
+531,[TGV] LSU: unroll causes LSTA wrong address from PRF,,John Ingalls,2022-08-02,00:21:00
+534,[TGV] Assertion failed: At most one result should try to commit at EXN stage of VexPipe,,Nicolas Brunie,2022-08-01,09:16:00
+536,[TGV] Post Merge: Unexpected S2V completion pointer update during rewind,,Krishnendu Patra,2022-07-31,23:47:00
+547,[TGV] large masked vslideup.vx returning incorrect result,,Nicolas Brunie,2022-07-29,11:19:00
+552,RDU hang assertions: connect io.disableHangCatcher,,John Ingalls,2022-07-29,02:48:00
+553,[TGV] vrgather.vi using the wrong data source register index and offset,,Nicolas Brunie,2022-07-28,10:53:00
+554,[TGV] LSU TGV assert: ROB hang not retiring next store after vsetvli,,Warren Menezes,2022-07-28,09:49:00
+559,Unexpected exception when running checkpoint snippets (0074/297),,John Ingalls,2022-07-27,23:28:00
+561,[TGV] vle-vse test: ROB hang not retiring next load after vsetvli,,Warren Menezes,2022-07-27,16:02:00
+562,[TGV] LSU sending out wrong data for a vector write instruction,,Yohann Rabefarihy,2022-07-27,13:59:00
+563,[TGV] vfredosum hanging,,Nicolas Brunie,2022-07-27,11:43:00
+566,[TGV] PrIdx field not sized appropriately for vector load/store ops,,David Kravitz,2022-07-27,07:58:00
+577,[FPU] rv64uf-fadd/rv64ud-fadd test failing on modified p650 cfg when hasStandaloneMul/hasShareMultiplier are set to false,,Erdinc Ozturk,2022-07-25,19:18:00
+578,[TGV] ROB assertion firing on non-zero s2vAllocPtrRewindCnt while vector clock disabled,,Andrew Hanselman,2022-07-25,16:33:00
+590,[TGV] Assertion Failure: SiFive_IssQEntry_assert,,David Kravitz,2022-07-25,06:49:00
+591,[TGV] Baler IssQ should not use fifo = true,,David Kravitz,2022-07-25,06:06:00
+593,[TGV] Incorrect oldData been used in VectorCompareUnit,,Shaka Kao,2022-07-24,23:40:00
+596,[TGV] Assertion Failure: SiFive_LTBEntry_assert - LTB data enable without data from LDPipe,,Yohann Rabefarihy,2022-07-22,10:44:00
+599,[TGV] VectorReductionSequencer does not emit the correct uops for vfwredsum ,,Nicolas Brunie,2022-07-22,06:24:00
+609,[TGV] vrgatherei16 instruction not updating the dest reg correctly,,Nicolas Brunie,2022-07-21,16:22:00
+610,[TGV] vcompress instruction not executing correctly.,,Nicolas Brunie,2022-07-21,15:55:00
+614,[TGV] Masked vfredmin cosim mismatch - no active vector elements - NaN mismatch,,Brad Wu,2022-07-21,14:08:00
+617,[TGV] Assertion Failure: SiFive_RDU_assert,,Andrew Hanselman,2022-07-21,05:55:00
+618,Assertion Failure : MSHR Entry Valid Non-Reusable Hang,,John Ingalls,2022-07-20,23:19:00
+619,Assertion Failure: LSTM stage pre-calculated age wrong versus LSTR stage 1,,John Ingalls,2022-07-20,22:11:00
+630,[TGV] Assertion failed:SiFive_VexPipe_assert,,Nicolas Brunie,2022-07-20,07:31:00
+631,LSU Assertion: MAL-986: branch flush must not be older than ROB flush,,John Ingalls,2022-07-20,05:16:00
+632,[TGV] Slider byte slide amount inputs overflows,,Nicolas Brunie,2022-07-19,21:09:00
+633,[TGV] Data mismatch on a vslideup operation,,Nicolas Brunie,2022-07-19,15:38:00
+634,[TGV] VRDU Assertion failing in sting tests,,Alexandre Solomatnikov,2022-07-19,14:34:00
+636,[TGV] LSU: fix tgv_vle-vse.outline,,John Ingalls,2022-07-19,14:02:00
+638,LSU: unroll in LSTPipe0 drops PTW in LSTPipe1 causing hang,,John Ingalls,2022-07-19,06:21:00
+639,[TGV] RTL fails on a trap after a vmv4r.v while cosim continues (sting),,Nicolas Brunie,2022-07-18,16:53:00
+641,[TGV] vfrsqrt7.v should give canonical NaN when -inf as input,,Kira Tsao,2022-07-18,14:29:00
+649,Assertion Failure: SiFive_LSTPipe_assert due to xprop,,John Ingalls,2022-07-18,00:24:00
+654,[TGV] Redsum insts not following tail_agnostic policy of filling 1s,,Nicolas Brunie,2022-07-14,11:32:00
+661,[TGV] RTL raises an illegal instruction exception,,Nicolas Brunie,2022-07-13,17:23:00
+662,[TGV] Cosim mismatch on a vector widening add operation,,Nicolas Brunie,2022-07-13,16:33:00
+664,[TGV] data mismatch on a floating point multiplication operation,,Nicolas Brunie,2022-07-13,16:03:00
+669,[TGV] RDU assertion firing that the allocPTR and freePTR are not the same when ROB is empty,,Andrew Hanselman,2022-07-12,16:03:00
+671,[TGV] wrong tag being staged and broadcast from VectorPermuteEngine,,Nicolas Brunie,2022-07-12,15:02:00
+679,[TGV] X2Y source & dest tags not matching in P670,,Andrew Hanselman,2022-07-11,16:19:00
+683,Assertion Failure: SiFive_LDPipe_assert due to xprop,,Khondakar Mujtaba,2022-07-11,01:39:00
+686,[TGV] vrgather.vx with LMUL=8 and vl=1 hanging,,Nicolas Brunie,2022-07-08,16:28:00
+687,[TGV] vfrec7.v generates wrong data with `-inf` as input,,Kira Tsao,2022-07-08,14:49:00
+688,[TGV] Illegal instruction exception reported at a valid inst,,David Kravitz,2022-07-08,14:18:00
+689,"[FPU] uf-fmadd test failing on modified p650 cfg when ""hasShareMultiplier"" is set to false",,Kira Tsao,2022-07-08,14:03:00
+697,"[TGV] vmerge.vxm updating the destination, as mask = 0, when mask is 1",,Andrew Hanselman,2022-07-06,14:36:00
+702,[TGV] Assertion:: Physical register 24 set as ready twice,,Alexandre Solomatnikov,2022-07-05,23:22:00
+703,[TGV] Design and Cosim Mismatch between tail-elements for Vrgather with Tail-agnostic=1,,Nicolas Brunie,2022-07-05,22:44:00
+706,Assertion failed : L1DCData ECC Correctable Error,,John Ingalls,2022-07-05,20:46:00
+710,[TGV] vcompress.vm should follow the tail agnostic rule,,Nicolas Brunie,2022-07-05,13:06:00
+711,[TGV] LTB read started too soon,,Warren Menezes,2022-07-05,06:50:00
+712,X-prop through integer divider io.ready if divide replays in EX stage,,Dave Parry,2022-07-04,05:35:00
+714,Assertion Failure:  pcmtEntries*_pcHigh are not initialized,,Josh Smith,2022-07-04,03:31:00
+728,[TGV] LSU FV: TGV addition on sdrr_lgSize propogated into p550,,Alvin Tung,2022-06-29,12:42:00
+749,[TGV] simple reduction register conflict when vs2 group overlaps with vd,,Nicolas Brunie,2022-06-22,16:28:00
+773,"[TGV] Make vpopc/vfirst dispatch down Mask Unit pipe, not V2S pipe",,David Kravitz,2022-06-16,07:58:00
+774,Assertion Failure: MSHR Entry L2 FSM Hang,,Rick Chen,2022-06-16,05:11:00
+777,[TGV] Assertion:: VMSIF.M::  vector compare should always be 2-cycle full latency,,Brad Wu,2022-06-15,10:04:00
+780,Mallard IFU does not report parity errors to BEU,,Adam George,2022-06-14,15:35:00
+786,brqUpdatePossibleLate can keep IFU clock on even when BRQ is empty,,Saurabh Singh (PVIPs),2022-06-13,06:40:00
+787,LSU lw forwarding result from LDF does not match LDWB,,John Ingalls,2022-06-11,08:38:00
+790,IJTP's baseRdIdx should be piped to get correct counter,,Adam George,2022-06-10,00:57:00
+801,[SiFive_IFU_assert] Assertion failed: jalrRVIEndMask_F3 should be one-hot or zero,,Adam George,2022-06-08,10:26:00
+802,IFU clock enable should consider RD3 stage of BDP training pipeline,,Josh Smith,2022-06-07,17:51:00
+804,InOrderDispBuf doesn't take into account flushReq gid,,Alexandre Solomatnikov,2022-06-07,10:46:00
+806,[TGV] Rob Hang assertion on a sting test,,Alexandre Solomatnikov,2022-06-06,14:59:00
+808,Assertion failed: Rd/WrReqQ entry deallocted without dirWakeUp/missQWakeUp/evictQWakeUp,,Rick Chen,2022-06-06,07:18:00
+812,[TGV] Vex pipe assertion for 2 results committing in one cycle,,Nicolas Brunie,2022-06-03,14:26:00
+815,[TGV] vrgather.vi instruction causes WRDATA mismatch,,Nicolas Brunie,2022-06-03,05:21:00
+828, MSHR Entry L2 FSM Hang,,Rick Chen,2022-06-02,00:38:00
+839,BDP useful bit updates not generated correctly,,Adam George,2022-05-31,10:15:00
+840,LSU assertion: LSTO PTW/HWPF should not be misaligned,,John Ingalls,2022-05-31,07:37:00
+841,Assertion Failure: SiFive_IFU_assert Due to X-propagation,,Adam George,2022-05-31,02:42:00
+842,IJTP's TaggedTableParams (historyBits of each table) are not applied to idx/tag generation ,,Adam George,2022-05-30,23:02:00
+845,Assertion Failure: IFUMissQ hang,,Rick Chen,2022-05-30,07:26:00
+846,Assertion Failure: HWPF Hang,,John Ingalls,2022-05-30,07:07:00
+863,LSU FV: Misalign Access Exception for MMIO,,John Ingalls,2022-05-24,14:12:00
+871,Assertion failed: Vex PRF write should only be enabled for a valid result,,Nicolas Brunie,2022-05-19,08:49:00
+883,[TGV] ROB retire Hang assertion ,,Nicolas Brunie,2022-05-13,14:03:00
+887,[TGV] Assertion firing in the VEX Pipe,,Nicolas Brunie,2022-05-12,13:11:00
+889,[TGV] vfrec7.v producing wrong values,,Kira Tsao,2022-05-12,11:16:00
+890,IFU unit does not correctly identify call and return instructions,,Adam George,2022-05-12,09:40:00
+893,[TGV] vfrsqrt7.v producing wrong values,,Kira Tsao,2022-05-11,15:48:00
+902,Assertion Failure: SiFive_FEU_assert,,Josh Smith,2022-05-10,03:46:00
+903,disable hang catcher assertion with instTraceStall,,John Ingalls,2022-05-09,21:26:00
+921,[TGV] LSU returning the wrong data to core,,John Ingalls,2022-05-09,11:49:00
+922,Conditional moves cause excessive predictor updates reducing performance,,Adam George,2022-05-08,12:24:00
+923,Assertion Failure: SiFive_RAS_assert,,Adam George,2022-05-08,10:33:00
+931,Chicken CSR: connect disableClockGate to all ClockGates,,John Ingalls,2022-05-06,15:35:00
+942,FPMulAddRecFNCombined dedup issue in p650mc,,Kira Tsao,2022-05-04,13:15:00
+948,Perf: IFU can drop BDP training event due to clock being gated off,,Adam George,2022-05-03,19:57:00
+951,[TGV] vslide1down.vx tail agnostic behavior,,Nicolas Brunie,2022-05-02,15:29:00
+953,[TGV] Assertion failed: Physical register 6 set as ready twice,,Josh Smith,2022-05-02,00:25:00
+958,LSU: TileLink HintAck when no pl2Present,,John Ingalls,2022-05-01,05:24:00
+967,[TGV] implement floating-point flags output in min-max unit (VectorCompareUnit),,Brad Wu,2022-04-27,19:01:00
+969,[TGV] wrong masking of LLP exception flags for widening operation after 2nd dest optimization when vl is small,,Nicolas Brunie,2022-04-27,10:45:00
+971,"[TGV] sting failure: stall after erroneous sequencing of vmv.x.s zero, v*",,Nicolas Brunie,2022-04-27,09:36:00
+972,[TGV] Fill upper register bits with all 1's when tail agnostic policy is enforced.,,Nicolas Brunie,2022-04-27,09:30:00
+974,BRQ drives incorrect RAS ptr/age when two branches execute,,Adam George,2022-04-26,10:17:00
+978,[TGV] PMOD output validity assertion wrong on flush,,Nicolas Brunie,2022-04-25,09:42:00
+983,[TGV] Assertion Failure: SiFive_CSRFile_assert,,Alexandre Solomatnikov,2022-04-22,06:41:00
+984,Uncorrelated RAS overflow in specInt snippet 0010/128,,Adam George,2022-04-21,23:50:00
+985,Assertion Failure: SiFive_NLP_assert (NLP read has more than one valid matching entry),,Josh Smith,2022-04-20,23:54:00
+987,LSU: coreip_u8_maxed_out ASID not enabling bits [15:8],,John Ingalls,2022-04-20,08:24:00
+991,[COSIM-ERROR][#] COSIM VS RTL PC MISMATCH,,Saurabh Singh (PVIPs),2022-04-19,00:34:00
+996,[TGV] vslidedown.vx rd not renamed properly when vl = 0 (leading to Assertion Physical register %d (5) set as ready twice),,Nicolas Brunie,2022-04-18,06:19:00
